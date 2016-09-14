@@ -15,100 +15,102 @@
 
 <body>
     <!-- Header -->
-    <header
+    <header>
         <div>
             <h1>Assignment 1: CMPE 226</h1>
             <h3>HTML page to collect student information</h3>
         </div>
     </header>
 
-    <section >
-        <div >
-            <div>
-                <div >
-                    <h2>Student Information</h2>
-                    <hr >
+    <form action="receivedata.php" method="post">
+        <section >
+            <div >
+                <div>
                     <div >
+                        <h2>Student Information</h2>
+                        <hr >
                         <div >
                             <div >
-                                <h4>
-                                    <strong>Gender</strong>
-                                </h4>
-                                <p><input type="radio" name="gender" value="Male" />    Male<br/>
-                                    <br/>
-                                    <input type="radio" name="gender" value="Female" />    Female<br />
-                                </p>
+                                <div >
+                                    <h4>
+                                        <strong>Gender</strong>
+                                    </h4>
+                                    <p><input type="radio" name="gender" value="Male" />    Male<br/>
+                                        <br/>
+                                        <input type="radio" name="gender" value="Female" />    Female<br />
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div >
                             <div >
-                                <h4>
-                                    <strong>Graduation Specialization</strong>
-                                </h4>
-                                <p>
-                                    <input type="checkbox" name="specilization" value="est">  Enterprise Software Technologies<br><br>
-                                    <input type="checkbox" name="specilization" value="cloud" >  Cloud Computing<br><br>
-                                    <input type="checkbox" name="specilization" value="testing" >  Software Testing<br><br>
-                                    <input type="checkbox" name="specilization" value="networking" >  Networking<br><br>
-                                </p>
+                                <div >
+                                    <h4>
+                                        <strong>Graduation Specialization</strong>
+                                    </h4>
+                                    <p>
+                                        <input type="checkbox" name="specilization" value="est">  Enterprise Software Technologies<br><br>
+                                        <input type="checkbox" name="specilization" value="cloud" >  Cloud Computing<br><br>
+                                        <input type="checkbox" name="specilization" value="testing" >  Software Testing<br><br>
+                                        <input type="checkbox" name="specilization" value="networking" >  Networking<br><br>
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div >
                             <div >
-                                <h4>
-                                    <strong>Current Subject Enrolled</strong>
-                                </h4>
-                                <p>
-                                    <select>
-                                      <option value="226">CMPE 226</option>
-                                      <option value="274">CMPE 274</option>
-                                      <option value="277">CMPE 277</option>
-                                      <option value="280">CMPE 280</option>
-                                    </select>
-                                </p>
+                                <div >
+                                    <h4>
+                                        <strong>Current Subject Enrolled</strong>
+                                    </h4>
+                                    <p>
+                                        <select name="courses">
+                                          <option value="226">CMPE 226</option>
+                                          <option value="274">CMPE 274</option>
+                                          <option value="277">CMPE 277</option>
+                                          <option value="280">CMPE 280</option>
+                                        </select>
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div >
                             <div >
-                                <h4>
-                                    <strong>Birth Date</strong>
-                                </h4>
-                                <p><input type="text" name="birthdate"></input></p>
+                                <div >
+                                    <h4>
+                                        <strong>Birth Date</strong>
+                                    </h4>
+                                    <p><input type="text" name="birthdate"></input></p>
+                                </div>
                             </div>
                         </div>
+                        <!-- /.row (nested) -->
                     </div>
-                    <!-- /.row (nested) -->
+                    <!-- /.col-lg-10 -->
                 </div>
-                <!-- /.col-lg-10 -->
+                <!-- /.row -->
             </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-
-    <!-- Callout -->
-    <aside >
-        <div>
-            <h1>Input your name</h1>
-            <br>
-            <input> </input>
-        </div>
-    </aside>
+            <!-- /.container -->
+        </section>
 
 
+        <!-- Callout -->
+        <aside >
+            <div>
+                <h1>Input your name</h1>
+                <br>
+                <input> </input>
+            </div>
+        </aside>
 
-    <!-- Call to Action -->
-    <aside >
-        <div >
+        <!-- Call to Action -->
+        <aside >
             <div >
                 <div >
-                    <h3>The buttons below are impossible to resist.</h3>
-                    <a href="#" >Submit Form!</a>
-                    <a href="#" >Submit the form anyways!</a>
+                    <div >
+                        <h3>The buttons below are impossible to resist.</h3>
+                        <!--<a href="#" >Submit Form!</a>-->
+                        <input type="submit" value="Submit Form">
+                        <a href="#" >Submit the form anyways!</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </aside>
+        </aside>
+    </form>
 
     <!-- Footer -->
     <footer>
