@@ -22,21 +22,20 @@
         </div>
     </header>
 
-    <section >
+    <form action="receivedata.php" method="post">
+   
         <div >
             <div>
                 <div >
                     <h2>Student Information</h2>
-                    <hr >
+                    <br >
                     <div >
                             <!-- Callout -->
-                            <aside >
+                            
                                 <div>
                                     <h1>Input your name</h1>
-                                    <input> </input>
+                                    <input name="name" type="text"> </input>
                                 </div>
-                            </aside>
-
                         <div >
                             <div >
                                 <h4>
@@ -58,7 +57,7 @@
                                     <input type="checkbox" name="specilization" value="cloud" >  Cloud Computing<br><br>
                                     <input type="checkbox" name="specilization" value="testing" >  Software Testing<br><br>
                                     <input type="checkbox" name="specilization" value="embeded" >  Embeded<br><br>
-                                    <input type="checkbox" name="specilization" value="embeded" >  Embeded<br><br>
+                                    <input type="checkbox" name="specilization" value="networking" >  networking<br><br>
                                 </p>
                             </div>
                         </div>
@@ -68,18 +67,18 @@
                                     <strong>Current Subject Enrolled</strong>
                                 </h4>
                                 <p>
-                                    <select>
-                                      <option value="273">CMPE 273</option>
-                                      <option value="275">CMPE 275</option>
-                                      <option value="281">CMPE 281</option>
-                                      <option value="283">CMPE 283</option>
-                                      <option value="285">CMPE 285</option>
-                                      <option value="287">CMPE 287</option>
-                                      <option value="206">CMPE 206</option>
-                                      <option value="207">CMPE 207</option>
-                                      <option value="200">CMPE 200</option>
-                                      <option value="240">CMPE 240</option>
-                                      <option value="220">CMPE 220</option>
+                                    <select name="subject">
+                                      <option  value="273">CMPE 273</option>
+                                      <option  value="275">CMPE 275</option>
+                                      <option  value="281">CMPE 281</option>
+                                      <option  value="283">CMPE 283</option>
+                                      <option  value="285">CMPE 285</option>
+                                      <option  value="287">CMPE 287</option>
+                                      <option  value="206">CMPE 206</option>
+                                      <option  value="207">CMPE 207</option>
+                                      <option  value="200">CMPE 200</option>
+                                      <option  value="240">CMPE 240</option>
+                                      <option  value="220">CMPE 220</option>
                                     </select>
                                 </p>
                             </div>
@@ -92,18 +91,19 @@
             <!-- /.row -->
         </div>
         <!-- /.container -->
-    </section>
+    
 
     <!-- Call to Action -->
-    <aside >
+    
         <div >
             <div >
                 <div >
-                    <a href="#" >Submit Form!</a>
+                    <input type="submit" >Submit Form!</input>
                 </div>
             </div>
         </div>
-    </aside>
+    
+    </form>
 
     <!-- Footer -->
     <footer>
